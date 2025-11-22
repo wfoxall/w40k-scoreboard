@@ -52,5 +52,5 @@ const Detachment = computed(() => `${props.config?.detachment ?? 'Anonymous Deta
 const Faction = computed(() => props.config?.faction ?? '----')
 const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
 const Total = computed(() => props.score.primary + props.score.secondary)
-const Avatar = computed(() => props.config?.icon ? `/avatars/${props.config.icon}` : undefined)
+const Avatar = computed(() => props.config?.icon ? `./avatars/${props.config.icon}` : undefined)
 </script>
