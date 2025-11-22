@@ -1,0 +1,444 @@
+[
+    {
+        "superfaction": "Space Marines",
+        "faction": "Black Templars",
+        "icon": "black-templars.png",
+        "colour": "transparent",
+        "detachments": [
+            "Righteous Crusaders",
+            "Wrathful Procession",
+            "Gladius Task Force",
+            "Anvil Siege Force",
+            "Ironstorm Spearhead",
+            "Firestorm Assault Force",
+            "Stormlance Task Force",
+            "Vanguard Spearhead",
+            "1st Company Task Force",
+            "Librarious Conclave",
+            "Companions of Vehemence",
+            "Vindication Task Force",
+            "Godhammer Assault Force"
+        ]
+    },
+    {
+        "superfaction": "Space Marines",
+        "faction": "Blood Angels",
+        "icon": "blood-angels.png",
+        "colour": "transparent",
+        "detachments": [
+            "Liberator Assault Group",
+            "The Lost Brethren",
+            "The Angelic Host",
+            "Angelic Inheritors",
+            "Gladius Task Force",
+            "Anvil Siege Force",
+            "Ironstorm Spearhead",
+            "Firestorm Assault Force",
+            "Stormlance Task Force",
+            "Vanguard Spearhead",
+            "1st Company Task Force",
+            "Librarious Conclave"
+        ]
+    },
+    {
+        "superfaction": "Space Marines",
+        "faction": "Dark Angels",
+        "icon": "dark-angels.png",
+        "colour": "transparent",
+        "detachments": [
+            "Company of Hunters",
+            "Inner Circle Task Force",
+            "Unforgiven Task Force",
+            "Lion's Blade Task Force",
+            "Gladius Task Force",
+            "Anvil Siege Force",
+            "Ironstorm Spearhead",
+            "Firestorm Assault Force",
+            "Stormlance Task Force",
+            "Vanguard Spearhead",
+            "1st Company Task Force",
+            "Librarious Conclave",
+            "Wrath of the Rock"
+        ]
+    },
+    {
+        "superfaction": "Space Marines",
+        "faction": "Deathwatch",
+        "icon": "death-watch.png",
+        "colour": "transparent",
+        "detachments": [
+            "Black Spear Task Force",
+            "Gladius Task Force",
+            "Anvil Siege Force",
+            "Ironstorm Spearhead",
+            "Firestorm Assault Force",
+            "Stormlance Task Force",
+            "Vanguard Spearhead",
+            "1st Company Task Force",
+            "Librarious Conclave"
+        ]
+    },
+    {
+        "superfaction": "Space Marines",
+        "faction": "Space Marines",
+        "icon": "space-marines.png",
+        "colour": "transparent",
+        "detachments": [
+            "Gladius Task Force",
+            "Anvil Siege Force",
+            "Ironstorm Spearhead",
+            "Firestorm Assault Force",
+            "Stormlance Task Force",
+            "Vanguard Spearhead",
+            "1st Company Task Force",
+            "Librarious Conclave",
+            "Forgefather's Seekers",
+            "Shadowmark Talon",
+            "Spearpoint Task Force",
+            "Emperor's Shield",
+            "Hammer of Avernii"
+        ]
+    },
+    {
+        "superfaction": "Space Marines",
+        "faction": "Space Wolves",
+        "icon": "space-wolves.png",
+        "colour": "transparent",
+        "detachments": [
+            "Champion of Russ",
+            "Champions of Fenris",
+            "Saga of the Hunter",
+            "Saga of the Bond",
+            "Saga of the Beastslayer",
+            "Gladius Task Force",
+            "Anvil Siege Force",
+            "Ironstorm Spearhead",
+            "Firestorm Assault Force",
+            "Stormlance Task Force",
+            "Vanguard Spearhead",
+            "1st Company Task Force",
+            "Librarious Conclave"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Adepta Sororitas",
+        "icon": "adepta-sororitas.png",
+        "colour": "transparent",
+        "detachments": [
+            "Hallowed Martyrs",
+            "Penitent Host",
+            "Bringers of Flame",
+            "Army of Faith",
+            "Champions of Faith"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Adeptus Custodes",
+        "icon": "adeptus-custodes.png",
+        "colour": "transparent",
+        "detachments": [
+            "Talons of the Emperor",
+            "Shield Host",
+            "Null Maiden Vigil",
+            "Auric Champions",
+            "Solar Spearhead",
+            "Lions of the Emperor"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Adeptus Mechanicus",
+        "icon": "adeptus-mechanicus.png",
+        "colour": "transparent",
+        "detachments": [
+            "Rad-Zone Corps",
+            "Skitarii Hunter Cohort",
+            "Data-Psalm Conclave",
+            "Explorer Maniple",
+            "Cohort Cybernetica",
+            "Haloscreed Battle Clade"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Astra Militarum",
+        "icon": "astra-militarum.png",
+        "colour": "transparent",
+        "detachments": [
+            "Combined Arms",
+            "Siege Regiment",
+            "Mechanised Assault",
+            "Hammer of the Emperor",
+            "Recon Element",
+            "Bridgehead Strike"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Grey Knights",
+        "icon": "grey-knights.png",
+        "colour": "transparent",
+        "detachments": [
+            "Teleport Strike Force",
+            "Warpbane Task Force",
+            "Brotherhood Strike",
+            "Hallowed Conclave",
+            "Banishers",
+            "Sanctic Spearhead",
+            "Augurium Task Force"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Imperial Agents",
+        "icon": "imperial-agents.png",
+        "colour": "transparent",
+        "detachments": [
+            "Imperialis Fleet",
+            "Alien Hunters",
+            "Purgation Force",
+            "Daemon Hunters",
+            "Veiled Blade Elimination Force"
+        ]
+    },
+    {
+        "superfaction": "Imperium",
+        "faction": "Imperial Knights",
+        "icon": "imperial-knights.png",
+        "colour": "transparent",
+        "detachments": [
+            "Noble Lance",
+            "Questor Forgepact",
+            "Valourstrike Lance",
+            "Gate Warden Lance",
+            "Questoris Companions",
+            "Spearhead-at-Arms"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "Chaos Daemons",
+        "icon": "chaos-daemons.png",
+        "colour": "transparent",
+        "detachments": [
+            "Daemonic Incursion",
+            "Legion of Excess",
+            "Scintillating Legion",
+            "Blood Legion",
+            "Plague Legion",
+            "Shadow Legion"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "Chaos Knights",
+        "icon": "chaos-knights.png",
+        "colour": "transparent",
+        "detachments": [
+            "Traitoris Lance",
+            "Iconoclast Fiefdom",
+            "Infernal Lance",
+            "Lords of Dread",
+            "Houndpack Lance"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "Chaos Space Marines",
+        "icon": "chaos-space-marines.png",
+        "colour": "transparent",
+        "detachments": [
+            "Veterans of the Long War",
+            "Deceptors",
+            "Renegade Raiders",
+            "Dread Talons",
+            "Fellhammer Siege-Host",
+            "Pactbound Zealots",
+            "Chaos Cult",
+            "Soulforged Warpack",
+            "Creations of Bile",
+            "Cabal of Chaos"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "Emperor's Children",
+        "icon": "emperors-children.png",
+        "colour": "transparent",
+        "detachments": [
+            "Rapid Evisceration",
+            "Coterie of the Conceited",
+            "Carnival of Excess",
+            "The Mercurial Host",
+            "Slaanesh's Chosen",
+            "Peerless Bladesmen"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "World Eaters",
+        "icon": "world-eaters.png",
+        "colour": "transparent",
+        "detachments": [
+            "Berzerker Warband",
+            "Cult of Blood",
+            "Goretrack Onslaught",
+            "Khorne Daemonkin",
+            "Possessed Slaughterband",
+            "Vessels of Wrath"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "Death Guard",
+        "icon": "death-guard.png",
+        "colour": "transparent",
+        "detachments": [
+            "Champions of Contagion",
+            "Death Lord's Chosen",
+            "Flyblown Host",
+            "Mortarion's Hammer",
+            "Plague Company",
+            "Shamblerot Vectorium",
+            "Tallyband Summoners",
+            "Virulent Vectorium"
+        ]
+    },
+    {
+        "superfaction": "Chaos",
+        "faction": "Thousand Sons",
+        "icon": "thousand-sons.png",
+        "colour": "transparent",
+        "detachments": [
+            "Cult of Magic",
+            "Hexwarp Thrallband",
+            "Grand Coven",
+            "Changehost of Deceit",
+            "Rubricae of Phalanx",
+            "Warpforged Cabal",
+            "Warpmeld Pact"
+        ]
+    },
+    {
+        "superfaction": "Aeldari",
+        "faction": "Aeldari",
+        "icon": "aeldari.png",
+        "colour": "transparent",
+        "detachments": [
+            "Warhost",
+            "Windrider Host",
+            "Spirit Conclave",
+            "Guardian Battlehost",
+            "Seer Council",
+            "Aspect Host",
+            "Devoted of Ynnead",
+            "Ghosts of the Webway",
+            "Armoured Warhost"
+        ]
+    },
+    {
+        "superfaction": "Aeldari",
+        "faction": "Drukhari",
+        "icon": "drukhari.png",
+        "colour": "transparent",
+        "detachments": [
+            "Realspace Raiders",
+            "Skysplinter Assault",
+            "Reaper's Wager",
+            "Spectacle of Spite",
+            "Covenite Coterie",
+            "Kabalite Cartel"
+        ]
+    },
+    {
+        "superfaction": "Forces of the Hive Mind",
+        "faction": "Genestealer Cults",
+        "icon": "genestealer-cults.png",
+        "colour": "transparent",
+        "detachments": [
+            "Host of Ascension",
+            "Xenocreed Congregation",
+            "Biosanctic Broodsurge",
+            "Outlander Craw",
+            "Brood Brother Auxilia",
+            "Final Day"
+        ]
+    },
+    {
+        "superfaction": "Forces of the Hive Mind",
+        "faction": "Tyranids",
+        "icon": "tyranids.png",
+        "colour": "transparent",
+        "detachments": [
+            "Invasion Fleet",
+            "Crusher Stampede",
+            "Unending Swarm",
+            "Assimilation Swarm",
+            "Vanguard Onslaught",
+            "Synaptic Nexus",
+            "Warrior Bioform Onslaught",
+            "Subterranean Assault"
+        ]
+    },
+    {
+        "superfaction": "Xenos",
+        "faction": "Necrons",
+        "icon": "necrons.png",
+        "colour": "transparent",
+        "detachments": [
+            "Awakened Dynasty",
+            "Annihilation Legion",
+            "Canoptek Court",
+            "Obeisance Phalanx",
+            "Hypercrypt Legion",
+            "Starshatter Arsenal"
+        ]
+    },
+    {
+        "superfaction": "Xenos",
+        "faction": "Orks",
+        "icon": "orcs.png",
+        "colour": "transparent",
+        "detachments": [
+            "War Horde",
+            "Da Big Hunt",
+            "Kult of Speed",
+            "Dread Mob",
+            "Green Tide",
+            "Bully Boyz",
+            "Taktikal Brigade",
+            "More Dakka!"
+        ]
+    },
+    {
+        "superfaction": "Xenos",
+        "faction": "T'au",
+        "icon": "t_au-empire.png",
+        "colour": "transparent",
+        "detachments": [
+            "Kauyon",
+            "Mont'Ka",
+            "Retaliation Cadre",
+            "Kroot Hunting Pack",
+            "Auxiliary Cadre",
+            "Experimental Prototype Cadre"
+        ]
+    },
+    {
+        "superfaction": "Xenos",
+        "faction": "Leagues of Votann",
+        "icon": "leagues-of-votann.png",
+        "colour": "transparent",
+        "detachments": [
+            "Oathband",
+            "Hearthband",
+            "Needgaard Oathband",
+            "Persecution Prospect",
+            "Delve Assault Shift",
+            "Brandfast Oathband",
+            "Hearthfire Arsenal"
+        ]
+    }
+]
