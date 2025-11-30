@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="space-y-4">
+        <div class="text-2xl">Settings</div>
         <UFormField label="Scoreboard Width">
-            
             <UInputNumber v-model="scoresWidth"/>
         </UFormField>
         <UFormField label="Show Scoreboard Border">
