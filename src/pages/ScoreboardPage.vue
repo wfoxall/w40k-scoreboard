@@ -3,12 +3,12 @@
         :style="{width: `${scoresWidth}px`}"
         class="bg-default p-6 space-y-6 box-border outline outline-gray-500"
         :class="{'outline-transparent': !showBorder}">
-                    <div class="p-4 flex">
-                        <div class="text-2xl text-primary">{{ TitleText }}</div>
-                    </div>
-                    <ArmyScoreCard :score="PlayerAScore" :config="armyA" :highlight="CurrentTurn == 'a'"/>
-                    <ArmyScoreCard :score="PlayerBScore" :config="armyB" :highlight="CurrentTurn == 'b'"/>
-                </div>
+        <div class="p-4 flex">
+            <div class="text-2xl text-primary">{{ TitleText }}</div>
+        </div>
+        <ArmyScoreCard :score="PlayerAScore" :config="armyA" :state="ArmyAState"/>
+        <ArmyScoreCard :score="PlayerBScore" :config="armyB" :state="ArmyBState"/>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -27,4 +27,12 @@ const TitleText = computed(() => {
 
 // const {aScore,bScore,PlayerTurn} = useScore()
 const { PlayerAScore, PlayerBScore, CurrentTurn, CurrentRound, MatchState } = useMatch()
+const ArmyAState = computed<null|'turn'|'win'>(() => {
+    if(MatchState.value === 'complete' && (PlayerAScore.value.primary + PlayerAScore.value.secondary) > (PlayerBScore.value.primary + PlayerBScore.value.secondary)) return 'win'
+    return CurrentTurn.value === 'a' ? 'turn' : null
+})
+const ArmyBState = computed<null|'turn'|'win'>(() => {
+    if(MatchState.value === 'complete' && (PlayerBScore.value.primary + PlayerBScore.value.secondary) > (PlayerAScore.value.primary + PlayerAScore.value.secondary)) return 'win'
+    return CurrentTurn.value === 'b' ? 'turn' : null
+})
 </script>
