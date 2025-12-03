@@ -7,39 +7,27 @@
             'ring-success': UseRing && state === 'win'
         }">
         <GlowBorder v-if="UseGlow" :duration="state === 'win' ? 8 : 30" :color="state === 'win' ? ['var(--color-primary)','var(--color-secondary)'] : undefined"/>
-        <div class="flex flex-row w-full gap-6 items-center">
-            <div class="h-full w-12 aspect-square flex justify-center items-center">
+        <div class="grid grid-cols-[auto_auto] grid-rows-[repeat(3,auto)_auto] items-center grid-flow-col gap-x-6 gap-y-1">
+            <div>{{ Detachment }}</div>
+            <div>{{ Faction }}</div>
+            <div class="text-muted">
+                <span v-if="Superfaction">
+                    {{ Superfaction }}
+                </span>
+            </div>
+            <div class="h-full grid grid-cols-[repeat(6,minmax(0,max-content))] gap-6 border-t border-muted items-center">
+                <div class="text-base text-muted">Pri</div>
+                <NumberTicker class="text-default text-base" :value="score.primary" :decimal-places="0"></NumberTicker>
+                <div class="text-base text-muted">Sec</div>
+                <NumberTicker class="text-default text-base" :value="score.secondary" :decimal-places="0"></NumberTicker>
+                <div class="text-base text-muted">CP</div>
+                <NumberTicker class="text-default text-base" :value="score.cp" :decimal-places="0"></NumberTicker>
+            </div>
+            <div class="row-span-2 justify-self-center">
                 <UAvatar class="bg-accented" size="3xl" text="T" :src="Avatar"/>
             </div>
-            <div class="flex-auto flex flex-col gap-y-1">
-                <div class="text-lg">{{ Detachment }}</div>
-                <div class="flex gap-x-2 flex-wrap text-sm text-muted">
-                    <span>
-                        {{ Faction }}
-                    </span>
-                    <span v-if="Superfaction">
-                        ({{ Superfaction }})
-                    </span>
-                </div>
-                <div class="grid grid-cols-3 gap-x-6 border-t border-accented">
-                    <div class="w-full flex justify-between items-center gap-x-2">
-                        <div class="text-xl text-muted">Pri.</div>
-                        <NumberTicker class="text-default" :value="score.primary" :decimal-places="0"></NumberTicker>
-                    </div>
-                    <div class="w-full flex justify-between items-center gap-x-2">
-                        <div class="text-xl text-muted">Sec.</div>
-                        <NumberTicker class="text-default" :value="score.secondary" :decimal-places="0"></NumberTicker>
-                    </div>
-                    <div class="w-full flex justify-between items-center gap-x-2">
-                        <div class="text-xl text-muted">CP</div>
-                        <NumberTicker class="text-default" :value="score.cp" :decimal-places="0"></NumberTicker>
-                    </div>
-                </div>
-            </div>
-            <div class="h-full w-12 aspect-square flex flex-col justify-center items-center">
-                <div class="text-lg text-muted">Total</div>
-                <NumberTicker class="text-default text-2xl" :value="Total" :decimal-places="0"></NumberTicker>
-            </div>
+            <div class="justify-self-center text-muted">Total</div>
+            <div class="justify-self-center"><NumberTicker class="text-default text-2xl" :value="Total" :decimal-places="0"></NumberTicker></div>
         </div>
     </div>
 </template>

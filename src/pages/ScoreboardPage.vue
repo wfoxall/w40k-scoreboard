@@ -1,9 +1,9 @@
 <template>
     <div 
         :style="{width: `${scoresWidth}px`}"
-        class="bg-default p-6 space-y-6 box-border outline outline-gray-500"
+        class="bg-default p-4 space-y-4 box-border outline outline-gray-500"
         :class="{'outline-transparent': !showBorder}">
-        <div class="p-4 flex">
+        <div class="px-4">
             <div class="text-2xl text-primary">{{ TitleText }}</div>
         </div>
         <ArmyScoreCard :score="PlayerAScore" :config="armyA" :state="ArmyAState"/>
