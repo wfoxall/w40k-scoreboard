@@ -1,16 +1,29 @@
 import { useRefHistory, useStorage } from "@vueuse/core";
 import { computed } from "vue";
+import { useArmies } from "./useArmies";
 
 export interface PlayerTurnScore {
     primary: number;
     secondary: number;
     cp: number;
 }
+export interface PlayerExtraPoints {
+    painted: number;
+}
+
+export interface PlayerScore {
+    primary: number;
+    secondary: number;
+    cp: number;
+    extra: PlayerExtraPoints;
+}
 
 const turnScores = useStorage<PlayerTurnScore[]>('turnScores', [])
 const {undo, redo, canUndo, canRedo} = useRefHistory(turnScores, {deep: true})
 
 export function useMatch() {
+
+    const {armyA,armyB} = useArmies();
 
     function submitTurn(score: PlayerTurnScore) {
         if(turnScores.value.length >= 10) return;
@@ -33,8 +46,8 @@ export function useMatch() {
      * - Primary and secondary scores are summed.
      * - CP is the last value in the array.
      */
-    function calculateCurrentScore(playerScores: PlayerTurnScore[]): PlayerTurnScore {
-        return playerScores.reduce<PlayerTurnScore>((accum, current) => {
+    function calculateCurrentTurnScore(playerTurnScores: PlayerTurnScore[]): PlayerTurnScore {
+        return playerTurnScores.reduce<PlayerTurnScore>((accum, current) => {
             return {
                 primary: accum.primary += current.primary,
                 secondary: accum.secondary += current.secondary,
@@ -44,11 +57,15 @@ export function useMatch() {
     }
 
 
-    const PlayerAScore = computed(() => {
-        return calculateCurrentScore(OddTurnScores.value)
+    const PlayerAScore = computed<PlayerScore>(() => {
+        const turnScores = calculateCurrentTurnScore(OddTurnScores.value)
+        const extraPoints: PlayerExtraPoints = {painted: armyA.value.painted ? 10 : 0}
+        return {...turnScores, extra: {...extraPoints}};
     })
-    const PlayerBScore = computed(() => {
-        return calculateCurrentScore(EvenTurnScores.value)
+    const PlayerBScore = computed<PlayerScore>(() => {
+        const turnScores = calculateCurrentTurnScore(EvenTurnScores.value)
+        const extraPoints: PlayerExtraPoints = {painted: armyB.value.painted ? 10 : 0}
+        return {...turnScores, extra: {...extraPoints}};
     })
 
     const CurrentRound = computed(() => {
@@ -70,7 +87,7 @@ export function useMatch() {
         canUndo,
         canRedo,
         /** Submit score for next player turn */
-        submitTurn: submitTurn,
+        submitTurn,
         /** Delete all turn scores and reset the turn to the start of the game */
         resetMatch,
         /** Current score for player A (who played first) */
