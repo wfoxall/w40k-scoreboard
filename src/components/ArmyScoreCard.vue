@@ -23,9 +23,9 @@
                 <div class="text-base text-muted">CP</div>
                 <NumberTicker class="text-default text-base" :value="score.cp" :decimal-places="0"></NumberTicker>
                 <div v-show="showExtraPointsIcons" class="justify-self-end text-muted">
-                    <div v-if="config?.painted" class="flex flex-row gap-1 items-center">
+                    <div v-if="config?.battleReady" class="flex flex-row gap-1 items-center">
                         <UIcon name="mdi:paint-outline"/>
-                        <span class="text-xs">(+{{ score.extra.painted }})</span>
+                        <span class="text-xs">(+{{ score.extra.battleReady }})</span>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ const props = withDefaults(defineProps<{
 const Detachment = computed(() => `${props.config?.detachment ?? 'Anonymous Detachment'}`)
 const Faction = computed(() => props.config?.faction ?? '----')
 const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
-const Total = computed(() => props.score.primary + props.score.secondary + props.score.extra.painted)
+const Total = computed(() => props.score.primary + props.score.secondary + props.score.extra.battleReady)
 const Avatar = computed(() => props.config?.icon ? `./avatars/${props.config.icon}` : undefined)
 const Initials = computed(() => {
     if(!props.config?.superfaction) return '?'

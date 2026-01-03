@@ -8,7 +8,7 @@ export interface PlayerTurnScore {
     cp: number;
 }
 export interface PlayerExtraPoints {
-    painted: number;
+    battleReady: number;
 }
 
 export interface PlayerScore {
@@ -59,12 +59,12 @@ export function useMatch() {
 
     const PlayerAScore = computed<PlayerScore>(() => {
         const turnScores = calculateCurrentTurnScore(OddTurnScores.value)
-        const extraPoints: PlayerExtraPoints = {painted: armyA.value.painted ? 10 : 0}
+        const extraPoints: PlayerExtraPoints = {battleReady: armyA.value.battleReady ? 10 : 0}
         return {...turnScores, extra: {...extraPoints}};
     })
     const PlayerBScore = computed<PlayerScore>(() => {
         const turnScores = calculateCurrentTurnScore(EvenTurnScores.value)
-        const extraPoints: PlayerExtraPoints = {painted: armyB.value.painted ? 10 : 0}
+        const extraPoints: PlayerExtraPoints = {battleReady: armyB.value.battleReady ? 10 : 0}
         return {...turnScores, extra: {...extraPoints}};
     })
 

@@ -8,11 +8,11 @@ export interface ArmyConfig {
     detachment: string;
     icon?: string;
     colour?: string;
-    painted?: boolean;
+    battleReady?: boolean;
 }
 
-const armyA = useStorage<ArmyConfig>('aConfig',{superfaction: '', faction: '', detachment: '', painted: false});
-const armyB = useStorage<ArmyConfig>('bConfig',{superfaction: '', faction: '', detachment: '', painted: false});
+const armyA = useStorage<ArmyConfig>('aConfig',{superfaction: '', faction: '', detachment: '', battleReady: false});
+const armyB = useStorage<ArmyConfig>('bConfig',{superfaction: '', faction: '', detachment: '', battleReady: false});
 export function useArmies() {
 
     const AllArmyConfigs = computed(() => {
@@ -25,15 +25,15 @@ export function useArmies() {
         })
     })
 
-    function setArmyPainted(army: 'a'|'b', value: boolean) {
-        if(army === 'a') armyA.value = {...armyA.value, painted: value }
-        if(army === 'b') armyB.value = {...armyB.value, painted: value }
+    function setArmyBattleReady(army: 'a'|'b', value: boolean) {
+        if(army === 'a') armyA.value = {...armyA.value, battleReady: value }
+        if(army === 'b') armyB.value = {...armyB.value, battleReady: value }
     }
 
     return {
         AllArmyConfigs,
         armyA,
         armyB,
-        setArmyPainted
+        setArmyBattleReady
     }
 }

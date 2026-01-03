@@ -7,14 +7,14 @@
                 <UFormField label="Faction & Detachment">
                     <ArmySelect v-model="armyA"/>
                 </UFormField>
-                <UCheckbox v-model="ArmyAPainted" label="Army Painted" />
+                <UCheckbox v-model="ArmyABattleReady" label="Battle Ready" description="The player's army is sufficiently painted to be considered 'battle ready' (+10 VP)"/>
             </div>
             <div class="flex flex-col gap-4">
                 <h2 class="text-xl">Player B</h2>
                 <UFormField label="Faction & Detachment">
                     <ArmySelect v-model="armyB"/>
                 </UFormField>
-                <UCheckbox v-model="ArmyBPainted" label="Army Painted" />
+                <UCheckbox v-model="ArmyBBattleReady" label="Battle Ready" description="The player's army is sufficiently painted to be considered 'battle ready' (+10 VP)"/>
             </div>
         </div>
     </div>
@@ -24,18 +24,18 @@
 import { computed } from 'vue';
 import { useArmies } from '../composables/useArmies';
 
-const ArmyAPainted = computed({
-    get: () => {return !!armyA.value.painted},
+const ArmyABattleReady = computed({
+    get: () => {return !!armyA.value.battleReady},
     set: (val: boolean) => {
-        setArmyPainted('a',val);
+        setArmyBattleReady('a',val);
     }
 })
-const ArmyBPainted = computed({
-    get: () => {return !!armyB.value.painted},
+const ArmyBBattleReady = computed({
+    get: () => {return !!armyB.value.battleReady},
     set: (val: boolean) => {
-        setArmyPainted('b',val);
+        setArmyBattleReady('b',val);
     }
 })
 
-const {armyA,armyB, setArmyPainted} = useArmies();
+const {armyA,armyB, setArmyBattleReady} = useArmies();
 </script>
