@@ -1,18 +1,18 @@
 <template>
     <div class="space-y-4">
         <div class="text-2xl">Settings</div>
-        <UFormField label="Scoreboard Width">
+        <UFormField label="Scoreboard Width" description="The width of the scoreboard (in pixels)">
             <UInputNumber v-model="scoresWidth"/>
         </UFormField>
         <UFormField
-            label="Show Scoreboard Border"
-            help="Display a border around the whole scoreboard. Can be useful as a guide when setting up window capture sizes."
+            label="Show border around scoreboard"
+            description="Can be useful as a guide when setting up window capture sizes."
         >
             <USwitch v-model="showBorder"/>
         </UFormField>
         <UFormField
             label="Show Extra Points Icons"
-            help="Icons will show on score card to indicate extra points. Eg. Painted army"
+            description="Indicate when extra points are applied. Eg. Battle Ready armies"
         >
             <USwitch v-model="showExtraPointsIcons"/>
         </UFormField>
