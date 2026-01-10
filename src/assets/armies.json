@@ -37,7 +37,8 @@
             "Stormlance Task Force",
             "Vanguard Spearhead",
             "1st Company Task Force",
-            "Librarious Conclave"
+            "Librarious Conclave",
+            "Rage-cursed Onslaught"
         ]
     },
     {
@@ -96,7 +97,11 @@
             "Shadowmark Talon",
             "Spearpoint Task Force",
             "Emperor's Shield",
-            "Hammer of Avernii"
+            "Hammer of Avernii",
+            "Blade of Ultramar",
+            "Bastion Task Force",
+            "Orbital Assault Force",
+            "Reclamation Force"
         ]
     },
     {
@@ -117,7 +122,8 @@
             "Stormlance Task Force",
             "Vanguard Spearhead",
             "1st Company Task Force",
-            "Librarious Conclave"
+            "Librarious Conclave",
+            "Saga of the Great Wolf"
         ]
     },
     {
@@ -172,7 +178,8 @@
             "Mechanised Assault",
             "Hammer of the Emperor",
             "Recon Element",
-            "Bridgehead Strike"
+            "Bridgehead Strike",
+            "Grizzled Company"
         ]
     },
     {
@@ -259,7 +266,8 @@
             "Chaos Cult",
             "Soulforged Warpack",
             "Creations of Bile",
-            "Cabal of Chaos"
+            "Cabal of Chaos",
+            "Nightmare Hunt"
         ]
     },
     {
@@ -273,7 +281,8 @@
             "Carnival of Excess",
             "The Mercurial Host",
             "Slaanesh's Chosen",
-            "Peerless Bladesmen"
+            "Peerless Bladesmen",
+            "Court of the Phoenician"
         ]
     },
     {
@@ -335,7 +344,8 @@
             "Aspect Host",
             "Devoted of Ynnead",
             "Ghosts of the Webway",
-            "Armoured Warhost"
+            "Armoured Warhost",
+            "Serpent's Brood"
         ]
     },
     {
@@ -393,7 +403,10 @@
             "Canoptek Court",
             "Obeisance Phalanx",
             "Hypercrypt Legion",
-            "Starshatter Arsenal"
+            "Starshatter Arsenal",
+            "Cryptek Conclave",
+            "Cursed Legion",
+            "Pantheon of Woe"
         ]
     },
     {
