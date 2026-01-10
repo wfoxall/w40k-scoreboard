@@ -7,7 +7,7 @@
             'ring-success': UseRing && state === 'win'
         }">
         <GlowBorder v-if="UseGlow" :duration="state === 'win' ? 8 : 30" :color="state === 'win' ? ['var(--color-primary)','var(--color-secondary)'] : undefined"/>
-        <div class="grid grid-cols-[auto_max-content] grid-rows-[repeat(3,auto)_auto] items-center grid-flow-col gap-x-6 gap-y-1">
+        <div class="grid grid-cols-[auto_max-content] grid-rows-[repeat(3,auto)_auto] items-center grid-flow-col gap-x-4 gap-y-1">
             <div>{{ Detachment }}</div>
             <div>{{ Faction }}</div>
             <div class="text-muted">
@@ -22,11 +22,8 @@
                 <NumberTicker class="text-default text-base" :value="score.secondary" :decimal-places="0"></NumberTicker>
                 <div class="text-base text-muted">CP</div>
                 <NumberTicker class="text-default text-base" :value="score.cp" :decimal-places="0"></NumberTicker>
-                <div v-show="showExtraPointsIcons" class="justify-self-end text-muted">
-                    <div v-if="config?.battleReady" class="flex flex-row gap-1 items-center">
-                        <UIcon name="mdi:paint-outline"/>
-                        <span class="text-xs">(+{{ score.extra.battleReady }})</span>
-                    </div>
+                <div v-show="showExtraPointsIcons" class="text-muted min-w-5 flex justify-self-end justify-center">
+                    <UIcon v-if="config?.battleReady" name="mdi:paint-outline"/>
                 </div>
             </div>
             <div class=" px-3 row-span-2 justify-self-center">
