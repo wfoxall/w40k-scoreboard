@@ -267,7 +267,9 @@
             "Soulforged Warpack",
             "Creations of Bile",
             "Cabal of Chaos",
-            "Nightmare Hunt"
+            "Nightmare Hunt",
+            "Huron's Raiders",
+            "Renegade Warband"
         ]
     },
     {
@@ -345,7 +347,9 @@
             "Devoted of Ynnead",
             "Ghosts of the Webway",
             "Armoured Warhost",
-            "Serpent's Brood"
+            "Serpent's Brood",
+            "Eldritch Raiders",
+            "Corsair Coterie"
         ]
     },
     {
@@ -422,7 +426,8 @@
             "Green Tide",
             "Bully Boyz",
             "Taktikal Brigade",
-            "More Dakka!"
+            "More Dakka!",
+            "Freebooter Krew"
         ]
     },
     {
@@ -451,7 +456,8 @@
             "Persecution Prospect",
             "Delve Assault Shift",
             "Brandfast Oathband",
-            "Hearthfire Arsenal"
+            "Hearthfire Arsenal",
+            "Mercenary Oathband"
         ]
     }
 ]
