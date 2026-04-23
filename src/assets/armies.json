@@ -17,7 +17,12 @@
             "Librarious Conclave",
             "Companions of Vehemence",
             "Vindication Task Force",
-            "Godhammer Assault Force"
+            "Godhammer Assault Force",
+            "Bastion Task Force",
+            "Orbital Assault Force",
+            "Ceramite Sentinels",
+            "Armoured Speartip",
+            "Headhunter Task force"
         ]
     },
     {
@@ -38,7 +43,12 @@
             "Vanguard Spearhead",
             "1st Company Task Force",
             "Librarious Conclave",
-            "Rage-cursed Onslaught"
+            "Rage-cursed Onslaught",
+            "Bastion Task Force",
+            "Orbital Assault Force",
+            "Ceramite Sentinels",
+            "Armoured Speartip",
+            "Headhunter Task force"
         ]
     },
     {
@@ -59,7 +69,12 @@
             "Vanguard Spearhead",
             "1st Company Task Force",
             "Librarious Conclave",
-            "Wrath of the Rock"
+            "Wrath of the Rock",
+            "Bastion Task Force",
+            "Orbital Assault Force",
+            "Ceramite Sentinels",
+            "Armoured Speartip",
+            "Headhunter Task force"
         ]
     },
     {
@@ -76,7 +91,12 @@
             "Stormlance Task Force",
             "Vanguard Spearhead",
             "1st Company Task Force",
-            "Librarious Conclave"
+            "Librarious Conclave",
+            "Bastion Task Force",
+            "Orbital Assault Force",
+            "Ceramite Sentinels",
+            "Armoured Speartip",
+            "Headhunter Task force"
         ]
     },
     {
@@ -99,9 +119,12 @@
             "Emperor's Shield",
             "Hammer of Avernii",
             "Blade of Ultramar",
+            "Reclamation Force",
             "Bastion Task Force",
             "Orbital Assault Force",
-            "Reclamation Force"
+            "Ceramite Sentinels",
+            "Armoured Speartip",
+            "Headhunter Task force"
         ]
     },
     {
@@ -123,7 +146,12 @@
             "Vanguard Spearhead",
             "1st Company Task Force",
             "Librarious Conclave",
-            "Saga of the Great Wolf"
+            "Saga of the Great Wolf",
+            "Bastion Task Force",
+            "Orbital Assault Force",
+            "Ceramite Sentinels",
+            "Armoured Speartip",
+            "Headhunter Task force"
         ]
     },
     {
@@ -164,7 +192,8 @@
             "Data-Psalm Conclave",
             "Explorer Maniple",
             "Cohort Cybernetica",
-            "Haloscreed Battle Clade"
+            "Haloscreed Battle Clade",
+            "Eradication Cohort"
         ]
     },
     {
@@ -179,7 +208,9 @@
             "Hammer of the Emperor",
             "Recon Element",
             "Bridgehead Strike",
-            "Grizzled Company"
+            "Grizzled Company",
+            "Steel Hammer",
+            "Armoured Infantry"
         ]
     },
     {
@@ -221,7 +252,8 @@
             "Valourstrike Lance",
             "Gate Warden Lance",
             "Questoris Companions",
-            "Spearhead-at-Arms"
+            "Spearhead-at-Arms",
+            "Freeblade Company"
         ]
     },
     {
@@ -248,7 +280,8 @@
             "Iconoclast Fiefdom",
             "Infernal Lance",
             "Lords of Dread",
-            "Houndpack Lance"
+            "Houndpack Lance",
+            "Helhunt Lance"
         ]
     },
     {
@@ -269,7 +302,9 @@
             "Cabal of Chaos",
             "Nightmare Hunt",
             "Huron's Raiders",
-            "Renegade Warband"
+            "Renegade Warband",
+            "Warpstrike Champions",
+            "Cult of the Arkifane"
         ]
     },
     {
@@ -393,7 +428,7 @@
             "Vanguard Onslaught",
             "Synaptic Nexus",
             "Warrior Bioform Onslaught",
-            "Subterranean Assault"
+            "Subterranean Assault",
         ]
     },
     {
@@ -427,7 +462,9 @@
             "Bully Boyz",
             "Taktikal Brigade",
             "More Dakka!",
-            "Freebooter Krew"
+            "Freebooter Krew",
+            "Speedwaaagh!",
+            "Blitz Brigade"
         ]
     },
     {
