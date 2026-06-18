@@ -12,13 +12,14 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, toRefs } from 'vue';
 import { useMatch } from '../composables/useMatch';
 import { useSettings } from '../composables/useSettings';
-import { useArmies } from '../composables/useArmies';
+import { useArmy } from '../composables/useArmy';
 
 const {scoresWidth, showBorder} = useSettings();
-const {armyA,armyB} = useArmies()
+const {armyConfig: armyA} = toRefs(useArmy('playerA'))
+const {armyConfig: armyB} = toRefs(useArmy('playerB'))
 
 const TitleText = computed(() => {
     if(MatchState.value === 'complete') return `Final scores`

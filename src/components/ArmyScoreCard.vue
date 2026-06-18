@@ -10,11 +10,6 @@
         <div class="grid grid-cols-[auto_max-content] grid-rows-[repeat(3,auto)_auto] items-center grid-flow-col gap-x-4 gap-y-1">
             <div>{{ Detachment }}</div>
             <div>{{ Faction }}</div>
-            <div class="text-muted">
-                <span v-if="Superfaction">
-                    {{ Superfaction }}
-                </span>
-            </div>
             <div class="h-full grid grid-cols-[repeat(6,minmax(0,max-content))_auto] gap-4 border-t border-muted items-center w-full">
                 <div class="text-base text-muted">Pri</div>
                 <NumberTicker class="text-default text-base" :value="score.primary" :decimal-places="0"></NumberTicker>
@@ -39,7 +34,7 @@
 import { computed } from 'vue';
 import type { PlayerScore } from '../composables/useMatch';
 import NumberTicker from '../lib/number-ticker/NumberTicker.vue';
-import type { ArmyConfig } from '../composables/useArmies';
+import type { ArmyConfig } from '../config/armies.ts';
 import GlowBorder from '../lib/glow-border/GlowBorder.vue';
 import {useSettings} from '../composables/useSettings'
 
@@ -49,14 +44,14 @@ const props = withDefaults(defineProps<{
     config?: ArmyConfig|null,
     state?: null|'turn'|'win'
 }>(),{config: null, state: null})
-const Detachment = computed(() => `${props.config?.detachment ?? 'Anonymous Detachment'}`)
+const Detachment = computed(() => `${props.config?.detachments ?? 'Anonymous Detachment'}`)
 const Faction = computed(() => props.config?.faction ?? '----')
-const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
+// const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
 const Total = computed(() => props.score.primary + props.score.secondary + props.score.extra.battleReady)
 const Avatar = computed(() => props.config?.icon ? `./avatars/${props.config.icon}` : undefined)
 const Initials = computed(() => {
-    if(!props.config?.superfaction) return '?'
-    return props.config.superfaction.split(' ').map((word) => word.charAt(0)).join('') ?? '?'
+    if(!props.config?.faction) return '?'
+    return props.config.faction.split(' ').map((word) => word.charAt(0)).join('') ?? '?'
 })
 const UseRing = computed(() => armyHighlightStyle.value === 'ring' && ((props.state === 'turn') || (props.state === 'win')))
 const UseGlow = computed(() => armyHighlightStyle.value === 'glow' && ((props.state === 'turn') || (props.state === 'win')))

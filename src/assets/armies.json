@@ -5,24 +5,24 @@
         "icon": "black-templars.png",
         "colour": "transparent",
         "detachments": [
-            "Righteous Crusaders",
-            "Wrathful Procession",
-            "Gladius Task Force",
-            "Anvil Siege Force",
-            "Ironstorm Spearhead",
-            "Firestorm Assault Force",
-            "Stormlance Task Force",
-            "Vanguard Spearhead",
-            "1st Company Task Force",
-            "Librarious Conclave",
-            "Companions of Vehemence",
-            "Vindication Task Force",
-            "Godhammer Assault Force",
-            "Bastion Task Force",
-            "Orbital Assault Force",
-            "Ceramite Sentinels",
-            "Armoured Speartip",
-            "Headhunter Task force"
+            {"dp": 1, "name": "Righteous Crusaders"},
+            {"dp": 1, "name": "Wrathful Procession"},
+            {"dp": 1, "name": "Gladius Task Force"},
+            {"dp": 1, "name": "Anvil Siege Force"},
+            {"dp": 1, "name": "Ironstorm Spearhead"},
+            {"dp": 1, "name": "Firestorm Assault Force"},
+            {"dp": 1, "name": "Stormlance Task Force"},
+            {"dp": 1, "name": "Vanguard Spearhead"},
+            {"dp": 1, "name": "1st Company Task Force"},
+            {"dp": 1, "name": "Librarious Conclave"},
+            {"dp": 1, "name": "Companions of Vehemence"},
+            {"dp": 1, "name": "Vindication Task Force"},
+            {"dp": 1, "name": "Godhammer Assault Force"},
+            {"dp": 1, "name": "Bastion Task Force"},
+            {"dp": 1, "name": "Orbital Assault Force"},
+            {"dp": 1, "name": "Ceramite Sentinels"},
+            {"dp": 1, "name": "Armoured Speartip"},
+            {"dp": 1, "name": "Headhunter Task force"}
         ]
     },
     {
@@ -31,24 +31,24 @@
         "icon": "blood-angels.png",
         "colour": "transparent",
         "detachments": [
-            "Liberator Assault Group",
-            "The Lost Brethren",
-            "The Angelic Host",
-            "Angelic Inheritors",
-            "Gladius Task Force",
-            "Anvil Siege Force",
-            "Ironstorm Spearhead",
-            "Firestorm Assault Force",
-            "Stormlance Task Force",
-            "Vanguard Spearhead",
-            "1st Company Task Force",
-            "Librarious Conclave",
-            "Rage-cursed Onslaught",
-            "Bastion Task Force",
-            "Orbital Assault Force",
-            "Ceramite Sentinels",
-            "Armoured Speartip",
-            "Headhunter Task force"
+            {"dp": 1, "name": "Liberator Assault Group"},
+            {"dp": 1, "name": "The Lost Brethren"},
+            {"dp": 1, "name": "The Angelic Host"},
+            {"dp": 1, "name": "Angelic Inheritors"},
+            {"dp": 1, "name": "Gladius Task Force"},
+            {"dp": 1, "name": "Anvil Siege Force"},
+            {"dp": 1, "name": "Ironstorm Spearhead"},
+            {"dp": 1, "name": "Firestorm Assault Force"},
+            {"dp": 1, "name": "Stormlance Task Force"},
+            {"dp": 1, "name": "Vanguard Spearhead"},
+            {"dp": 1, "name": "1st Company Task Force"},
+            {"dp": 1, "name": "Librarious Conclave"},
+            {"dp": 1, "name": "Rage-cursed Onslaught"},
+            {"dp": 1, "name": "Bastion Task Force"},
+            {"dp": 1, "name": "Orbital Assault Force"},
+            {"dp": 1, "name": "Ceramite Sentinels"},
+            {"dp": 1, "name": "Armoured Speartip"},
+            {"dp": 1, "name": "Headhunter Task force"}
         ]
     },
     {
@@ -57,24 +57,24 @@
         "icon": "dark-angels.png",
         "colour": "transparent",
         "detachments": [
-            "Company of Hunters",
-            "Inner Circle Task Force",
-            "Unforgiven Task Force",
-            "Lion's Blade Task Force",
-            "Gladius Task Force",
-            "Anvil Siege Force",
-            "Ironstorm Spearhead",
-            "Firestorm Assault Force",
-            "Stormlance Task Force",
-            "Vanguard Spearhead",
-            "1st Company Task Force",
-            "Librarious Conclave",
-            "Wrath of the Rock",
-            "Bastion Task Force",
-            "Orbital Assault Force",
-            "Ceramite Sentinels",
-            "Armoured Speartip",
-            "Headhunter Task force"
+            {"dp": 1, "name": "Company of Hunters"},
+            {"dp": 1, "name": "Inner Circle Task Force"},
+            {"dp": 1, "name": "Unforgiven Task Force"},
+            {"dp": 1, "name": "Lion's Blade Task Force"},
+            {"dp": 1, "name": "Gladius Task Force"},
+            {"dp": 1, "name": "Anvil Siege Force"},
+            {"dp": 1, "name": "Ironstorm Spearhead"},
+            {"dp": 1, "name": "Firestorm Assault Force"},
+            {"dp": 1, "name": "Stormlance Task Force"},
+            {"dp": 1, "name": "Vanguard Spearhead"},
+            {"dp": 1, "name": "1st Company Task Force"},
+            {"dp": 1, "name": "Librarious Conclave"},
+            {"dp": 1, "name": "Wrath of the Rock"},
+            {"dp": 1, "name": "Bastion Task Force"},
+            {"dp": 1, "name": "Orbital Assault Force"},
+            {"dp": 1, "name": "Ceramite Sentinels"},
+            {"dp": 1, "name": "Armoured Speartip"},
+            {"dp": 1, "name": "Headhunter Task force"}
         ]
     },
     {
@@ -83,20 +83,20 @@
         "icon": "death-watch.png",
         "colour": "transparent",
         "detachments": [
-            "Black Spear Task Force",
-            "Gladius Task Force",
-            "Anvil Siege Force",
-            "Ironstorm Spearhead",
-            "Firestorm Assault Force",
-            "Stormlance Task Force",
-            "Vanguard Spearhead",
-            "1st Company Task Force",
-            "Librarious Conclave",
-            "Bastion Task Force",
-            "Orbital Assault Force",
-            "Ceramite Sentinels",
-            "Armoured Speartip",
-            "Headhunter Task force"
+            {"dp": 1, "name": "Black Spear Task Force"},
+            {"dp": 1, "name": "Gladius Task Force"},
+            {"dp": 1, "name": "Anvil Siege Force"},
+            {"dp": 1, "name": "Ironstorm Spearhead"},
+            {"dp": 1, "name": "Firestorm Assault Force"},
+            {"dp": 1, "name": "Stormlance Task Force"},
+            {"dp": 1, "name": "Vanguard Spearhead"},
+            {"dp": 1, "name": "1st Company Task Force"},
+            {"dp": 1, "name": "Librarious Conclave"},
+            {"dp": 1, "name": "Bastion Task Force"},
+            {"dp": 1, "name": "Orbital Assault Force"},
+            {"dp": 1, "name": "Ceramite Sentinels"},
+            {"dp": 1, "name": "Armoured Speartip"},
+            {"dp": 1, "name": "Headhunter Task force"}
         ]
     },
     {
@@ -105,26 +105,26 @@
         "icon": "space-marines.png",
         "colour": "transparent",
         "detachments": [
-            "Gladius Task Force",
-            "Anvil Siege Force",
-            "Ironstorm Spearhead",
-            "Firestorm Assault Force",
-            "Stormlance Task Force",
-            "Vanguard Spearhead",
-            "1st Company Task Force",
-            "Librarious Conclave",
-            "Forgefather's Seekers",
-            "Shadowmark Talon",
-            "Spearpoint Task Force",
-            "Emperor's Shield",
-            "Hammer of Avernii",
-            "Blade of Ultramar",
-            "Reclamation Force",
-            "Bastion Task Force",
-            "Orbital Assault Force",
-            "Ceramite Sentinels",
-            "Armoured Speartip",
-            "Headhunter Task force"
+            {"dp": 1, "name": "Gladius Task Force"},
+            {"dp": 1, "name": "Anvil Siege Force"},
+            {"dp": 1, "name": "Ironstorm Spearhead"},
+            {"dp": 1, "name": "Firestorm Assault Force"},
+            {"dp": 1, "name": "Stormlance Task Force"},
+            {"dp": 1, "name": "Vanguard Spearhead"},
+            {"dp": 1, "name": "1st Company Task Force"},
+            {"dp": 1, "name": "Librarious Conclave"},
+            {"dp": 1, "name": "Forgefather's Seekers"},
+            {"dp": 1, "name": "Shadowmark Talon"},
+            {"dp": 1, "name": "Spearpoint Task Force"},
+            {"dp": 1, "name": "Emperor's Shield"},
+            {"dp": 1, "name": "Hammer of Avernii"},
+            {"dp": 1, "name": "Blade of Ultramar"},
+            {"dp": 1, "name": "Reclamation Force"},
+            {"dp": 1, "name": "Bastion Task Force"},
+            {"dp": 1, "name": "Orbital Assault Force"},
+            {"dp": 1, "name": "Ceramite Sentinels"},
+            {"dp": 1, "name": "Armoured Speartip"},
+            {"dp": 1, "name": "Headhunter Task force"}
         ]
     },
     {
@@ -133,25 +133,25 @@
         "icon": "space-wolves.png",
         "colour": "transparent",
         "detachments": [
-            "Champion of Russ",
-            "Champions of Fenris",
-            "Saga of the Hunter",
-            "Saga of the Bond",
-            "Saga of the Beastslayer",
-            "Gladius Task Force",
-            "Anvil Siege Force",
-            "Ironstorm Spearhead",
-            "Firestorm Assault Force",
-            "Stormlance Task Force",
-            "Vanguard Spearhead",
-            "1st Company Task Force",
-            "Librarious Conclave",
-            "Saga of the Great Wolf",
-            "Bastion Task Force",
-            "Orbital Assault Force",
-            "Ceramite Sentinels",
-            "Armoured Speartip",
-            "Headhunter Task force"
+            {"dp": 1, "name": "Champion of Russ"},
+            {"dp": 1, "name": "Champions of Fenris"},
+            {"dp": 1, "name": "Saga of the Hunter"},
+            {"dp": 1, "name": "Saga of the Bond"},
+            {"dp": 1, "name": "Saga of the Beastslayer"},
+            {"dp": 1, "name": "Gladius Task Force"},
+            {"dp": 1, "name": "Anvil Siege Force"},
+            {"dp": 1, "name": "Ironstorm Spearhead"},
+            {"dp": 1, "name": "Firestorm Assault Force"},
+            {"dp": 1, "name": "Stormlance Task Force"},
+            {"dp": 1, "name": "Vanguard Spearhead"},
+            {"dp": 1, "name": "1st Company Task Force"},
+            {"dp": 1, "name": "Librarious Conclave"},
+            {"dp": 1, "name": "Saga of the Great Wolf"},
+            {"dp": 1, "name": "Bastion Task Force"},
+            {"dp": 1, "name": "Orbital Assault Force"},
+            {"dp": 1, "name": "Ceramite Sentinels"},
+            {"dp": 1, "name": "Armoured Speartip"},
+            {"dp": 1, "name": "Headhunter Task force"}
         ]
     },
     {
@@ -160,11 +160,11 @@
         "icon": "adepta-sororitas.png",
         "colour": "transparent",
         "detachments": [
-            "Hallowed Martyrs",
-            "Penitent Host",
-            "Bringers of Flame",
-            "Army of Faith",
-            "Champions of Faith"
+            {"dp": 1, "name": "Hallowed Martyrs"},
+            {"dp": 1, "name": "Penitent Host"},
+            {"dp": 1, "name": "Bringers of Flame"},
+            {"dp": 1, "name": "Army of Faith"},
+            {"dp": 1, "name": "Champions of Faith"}
         ]
     },
     {
@@ -173,12 +173,12 @@
         "icon": "adeptus-custodes.png",
         "colour": "transparent",
         "detachments": [
-            "Talons of the Emperor",
-            "Shield Host",
-            "Null Maiden Vigil",
-            "Auric Champions",
-            "Solar Spearhead",
-            "Lions of the Emperor"
+            {"dp": 1, "name": "Talons of the Emperor"},
+            {"dp": 1, "name": "Shield Host"},
+            {"dp": 1, "name": "Null Maiden Vigil"},
+            {"dp": 1, "name": "Auric Champions"},
+            {"dp": 1, "name": "Solar Spearhead"},
+            {"dp": 1, "name": "Lions of the Emperor"}
         ]
     },
     {
@@ -187,13 +187,13 @@
         "icon": "adeptus-mechanicus.png",
         "colour": "transparent",
         "detachments": [
-            "Rad-Zone Corps",
-            "Skitarii Hunter Cohort",
-            "Data-Psalm Conclave",
-            "Explorer Maniple",
-            "Cohort Cybernetica",
-            "Haloscreed Battle Clade",
-            "Eradication Cohort"
+            {"dp": 1, "name": "Rad-Zone Corps"},
+            {"dp": 1, "name": "Skitarii Hunter Cohort"},
+            {"dp": 1, "name": "Data-Psalm Conclave"},
+            {"dp": 1, "name": "Explorer Maniple"},
+            {"dp": 1, "name": "Cohort Cybernetica"},
+            {"dp": 1, "name": "Haloscreed Battle Clade"},
+            {"dp": 1, "name": "Eradication Cohort"}
         ]
     },
     {
@@ -202,15 +202,15 @@
         "icon": "astra-militarum.png",
         "colour": "transparent",
         "detachments": [
-            "Combined Arms",
-            "Siege Regiment",
-            "Mechanised Assault",
-            "Hammer of the Emperor",
-            "Recon Element",
-            "Bridgehead Strike",
-            "Grizzled Company",
-            "Steel Hammer",
-            "Armoured Infantry"
+            {"dp": 1, "name": "Combined Arms"},
+            {"dp": 1, "name": "Siege Regiment"},
+            {"dp": 1, "name": "Mechanised Assault"},
+            {"dp": 1, "name": "Hammer of the Emperor"},
+            {"dp": 1, "name": "Recon Element"},
+            {"dp": 1, "name": "Bridgehead Strike"},
+            {"dp": 1, "name": "Grizzled Company"},
+            {"dp": 1, "name": "Steel Hammer"},
+            {"dp": 1, "name": "Armoured Infantry"}
         ]
     },
     {
@@ -219,13 +219,13 @@
         "icon": "grey-knights.png",
         "colour": "transparent",
         "detachments": [
-            "Teleport Strike Force",
-            "Warpbane Task Force",
-            "Brotherhood Strike",
-            "Hallowed Conclave",
-            "Banishers",
-            "Sanctic Spearhead",
-            "Augurium Task Force"
+            {"dp": 1, "name": "Teleport Strike Force"},
+            {"dp": 1, "name": "Warpbane Task Force"},
+            {"dp": 1, "name": "Brotherhood Strike"},
+            {"dp": 1, "name": "Hallowed Conclave"},
+            {"dp": 1, "name": "Banishers"},
+            {"dp": 1, "name": "Sanctic Spearhead"},
+            {"dp": 1, "name": "Augurium Task Force"}
         ]
     },
     {
@@ -234,11 +234,11 @@
         "icon": "imperial-agents.png",
         "colour": "transparent",
         "detachments": [
-            "Imperialis Fleet",
-            "Alien Hunters",
-            "Purgation Force",
-            "Daemon Hunters",
-            "Veiled Blade Elimination Force"
+            {"dp": 1, "name": "Imperialis Fleet"},
+            {"dp": 1, "name": "Alien Hunters"},
+            {"dp": 1, "name": "Purgation Force"},
+            {"dp": 1, "name": "Daemon Hunters"},
+            {"dp": 1, "name": "Veiled Blade Elimination Force"}
         ]
     },
     {
@@ -247,13 +247,13 @@
         "icon": "imperial-knights.png",
         "colour": "transparent",
         "detachments": [
-            "Noble Lance",
-            "Questor Forgepact",
-            "Valourstrike Lance",
-            "Gate Warden Lance",
-            "Questoris Companions",
-            "Spearhead-at-Arms",
-            "Freeblade Company"
+            {"dp": 1, "name": "Noble Lance"},
+            {"dp": 1, "name": "Questor Forgepact"},
+            {"dp": 1, "name": "Valourstrike Lance"},
+            {"dp": 1, "name": "Gate Warden Lance"},
+            {"dp": 1, "name": "Questoris Companions"},
+            {"dp": 1, "name": "Spearhead-at-Arms"},
+            {"dp": 1, "name": "Freeblade Company"}
         ]
     },
     {
@@ -262,12 +262,12 @@
         "icon": "chaos-daemons.png",
         "colour": "transparent",
         "detachments": [
-            "Daemonic Incursion",
-            "Legion of Excess",
-            "Scintillating Legion",
-            "Blood Legion",
-            "Plague Legion",
-            "Shadow Legion"
+            {"dp": 1, "name": "Daemonic Incursion"},
+            {"dp": 1, "name": "Legion of Excess"},
+            {"dp": 1, "name": "Scintillating Legion"},
+            {"dp": 1, "name": "Blood Legion"},
+            {"dp": 1, "name": "Plague Legion"},
+            {"dp": 1, "name": "Shadow Legion"}
         ]
     },
     {
@@ -276,12 +276,12 @@
         "icon": "chaos-knights.png",
         "colour": "transparent",
         "detachments": [
-            "Traitoris Lance",
-            "Iconoclast Fiefdom",
-            "Infernal Lance",
-            "Lords of Dread",
-            "Houndpack Lance",
-            "Helhunt Lance"
+            {"dp": 1, "name": "Traitoris Lance"},
+            {"dp": 1, "name": "Iconoclast Fiefdom"},
+            {"dp": 1, "name": "Infernal Lance"},
+            {"dp": 1, "name": "Lords of Dread"},
+            {"dp": 1, "name": "Houndpack Lance"},
+            {"dp": 1, "name": "Helhunt Lance"}
         ]
     },
     {
@@ -290,21 +290,21 @@
         "icon": "chaos-space-marines.png",
         "colour": "transparent",
         "detachments": [
-            "Veterans of the Long War",
-            "Deceptors",
-            "Renegade Raiders",
-            "Dread Talons",
-            "Fellhammer Siege-Host",
-            "Pactbound Zealots",
-            "Chaos Cult",
-            "Soulforged Warpack",
-            "Creations of Bile",
-            "Cabal of Chaos",
-            "Nightmare Hunt",
-            "Huron's Raiders",
-            "Renegade Warband",
-            "Warpstrike Champions",
-            "Cult of the Arkifane"
+            {"dp": 1, "name": "Veterans of the Long War"},
+            {"dp": 1, "name": "Deceptors"},
+            {"dp": 1, "name": "Renegade Raiders"},
+            {"dp": 1, "name": "Dread Talons"},
+            {"dp": 1, "name": "Fellhammer Siege-Host"},
+            {"dp": 1, "name": "Pactbound Zealots"},
+            {"dp": 1, "name": "Chaos Cult"},
+            {"dp": 1, "name": "Soulforged Warpack"},
+            {"dp": 1, "name": "Creations of Bile"},
+            {"dp": 1, "name": "Cabal of Chaos"},
+            {"dp": 1, "name": "Nightmare Hunt"},
+            {"dp": 1, "name": "Huron's Raiders"},
+            {"dp": 1, "name": "Renegade Warband"},
+            {"dp": 1, "name": "Warpstrike Champions"},
+            {"dp": 1, "name": "Cult of the Arkifane"}
         ]
     },
     {
@@ -313,13 +313,13 @@
         "icon": "emperors-children.png",
         "colour": "transparent",
         "detachments": [
-            "Rapid Evisceration",
-            "Coterie of the Conceited",
-            "Carnival of Excess",
-            "The Mercurial Host",
-            "Slaanesh's Chosen",
-            "Peerless Bladesmen",
-            "Court of the Phoenician"
+            {"dp": 1, "name": "Rapid Evisceration"},
+            {"dp": 1, "name": "Coterie of the Conceited"},
+            {"dp": 1, "name": "Carnival of Excess"},
+            {"dp": 1, "name": "The Mercurial Host"},
+            {"dp": 1, "name": "Slaanesh's Chosen"},
+            {"dp": 1, "name": "Peerless Bladesmen"},
+            {"dp": 1, "name": "Court of the Phoenician"}
         ]
     },
     {
@@ -328,12 +328,12 @@
         "icon": "world-eaters.png",
         "colour": "transparent",
         "detachments": [
-            "Berzerker Warband",
-            "Cult of Blood",
-            "Goretrack Onslaught",
-            "Khorne Daemonkin",
-            "Possessed Slaughterband",
-            "Vessels of Wrath"
+            {"dp": 1, "name": "Berzerker Warband"},
+            {"dp": 1, "name": "Cult of Blood"},
+            {"dp": 1, "name": "Goretrack Onslaught"},
+            {"dp": 1, "name": "Khorne Daemonkin"},
+            {"dp": 1, "name": "Possessed Slaughterband"},
+            {"dp": 1, "name": "Vessels of Wrath"}
         ]
     },
     {
@@ -342,14 +342,14 @@
         "icon": "death-guard.png",
         "colour": "transparent",
         "detachments": [
-            "Champions of Contagion",
-            "Death Lord's Chosen",
-            "Flyblown Host",
-            "Mortarion's Hammer",
-            "Plague Company",
-            "Shamblerot Vectorium",
-            "Tallyband Summoners",
-            "Virulent Vectorium"
+            {"dp": 1, "name": "Champions of Contagion"},
+            {"dp": 1, "name": "Death Lord's Chosen"},
+            {"dp": 1, "name": "Flyblown Host"},
+            {"dp": 1, "name": "Mortarion's Hammer"},
+            {"dp": 1, "name": "Plague Company"},
+            {"dp": 1, "name": "Shamblerot Vectorium"},
+            {"dp": 1, "name": "Tallyband Summoners"},
+            {"dp": 1, "name": "Virulent Vectorium"}
         ]
     },
     {
@@ -358,13 +358,13 @@
         "icon": "thousand-sons.png",
         "colour": "transparent",
         "detachments": [
-            "Cult of Magic",
-            "Hexwarp Thrallband",
-            "Grand Coven",
-            "Changehost of Deceit",
-            "Rubricae of Phalanx",
-            "Warpforged Cabal",
-            "Warpmeld Pact"
+            {"dp": 1, "name": "Cult of Magic"},
+            {"dp": 1, "name": "Hexwarp Thrallband"},
+            {"dp": 1, "name": "Grand Coven"},
+            {"dp": 1, "name": "Changehost of Deceit"},
+            {"dp": 1, "name": "Rubricae of Phalanx"},
+            {"dp": 1, "name": "Warpforged Cabal"},
+            {"dp": 1, "name": "Warpmeld Pact"}
         ]
     },
     {
@@ -373,18 +373,18 @@
         "icon": "aeldari.png",
         "colour": "transparent",
         "detachments": [
-            "Warhost",
-            "Windrider Host",
-            "Spirit Conclave",
-            "Guardian Battlehost",
-            "Seer Council",
-            "Aspect Host",
-            "Devoted of Ynnead",
-            "Ghosts of the Webway",
-            "Armoured Warhost",
-            "Serpent's Brood",
-            "Eldritch Raiders",
-            "Corsair Coterie"
+            {"dp": 1, "name": "Warhost"},
+            {"dp": 1, "name": "Windrider Host"},
+            {"dp": 1, "name": "Spirit Conclave"},
+            {"dp": 1, "name": "Guardian Battlehost"},
+            {"dp": 1, "name": "Seer Council"},
+            {"dp": 1, "name": "Aspect Host"},
+            {"dp": 1, "name": "Devoted of Ynnead"},
+            {"dp": 1, "name": "Ghosts of the Webway"},
+            {"dp": 1, "name": "Armoured Warhost"},
+            {"dp": 1, "name": "Serpent's Brood"},
+            {"dp": 1, "name": "Eldritch Raiders"},
+            {"dp": 1, "name": "Corsair Coterie"}
         ]
     },
     {
@@ -393,12 +393,12 @@
         "icon": "drukhari.png",
         "colour": "transparent",
         "detachments": [
-            "Realspace Raiders",
-            "Skysplinter Assault",
-            "Reaper's Wager",
-            "Spectacle of Spite",
-            "Covenite Coterie",
-            "Kabalite Cartel"
+            {"dp": 1, "name": "Realspace Raiders"},
+            {"dp": 1, "name": "Skysplinter Assault"},
+            {"dp": 1, "name": "Reaper's Wager"},
+            {"dp": 1, "name": "Spectacle of Spite"},
+            {"dp": 1, "name": "Covenite Coterie"},
+            {"dp": 1, "name": "Kabalite Cartel"}
         ]
     },
     {
@@ -407,12 +407,12 @@
         "icon": "genestealer-cults.png",
         "colour": "transparent",
         "detachments": [
-            "Host of Ascension",
-            "Xenocreed Congregation",
-            "Biosanctic Broodsurge",
-            "Outlander Craw",
-            "Brood Brother Auxilia",
-            "Final Day"
+            {"dp": 1, "name": "Host of Ascension"},
+            {"dp": 1, "name": "Xenocreed Congregation"},
+            {"dp": 1, "name": "Biosanctic Broodsurge"},
+            {"dp": 1, "name": "Outlander Craw"},
+            {"dp": 1, "name": "Brood Brother Auxilia"},
+            {"dp": 1, "name": "Final Day"}
         ]
     },
     {
@@ -421,14 +421,14 @@
         "icon": "tyranids.png",
         "colour": "transparent",
         "detachments": [
-            "Invasion Fleet",
-            "Crusher Stampede",
-            "Unending Swarm",
-            "Assimilation Swarm",
-            "Vanguard Onslaught",
-            "Synaptic Nexus",
-            "Warrior Bioform Onslaught",
-            "Subterranean Assault"
+            {"dp": 1, "name": "Invasion Fleet"},
+            {"dp": 1, "name": "Crusher Stampede"},
+            {"dp": 1, "name": "Unending Swarm"},
+            {"dp": 1, "name": "Assimilation Swarm"},
+            {"dp": 1, "name": "Vanguard Onslaught"},
+            {"dp": 1, "name": "Synaptic Nexus"},
+            {"dp": 1, "name": "Warrior Bioform Onslaught"},
+            {"dp": 1, "name": "Subterranean Assault"}
         ]
     },
     {
@@ -437,15 +437,15 @@
         "icon": "necrons.png",
         "colour": "transparent",
         "detachments": [
-            "Awakened Dynasty",
-            "Annihilation Legion",
-            "Canoptek Court",
-            "Obeisance Phalanx",
-            "Hypercrypt Legion",
-            "Starshatter Arsenal",
-            "Cryptek Conclave",
-            "Cursed Legion",
-            "Pantheon of Woe"
+            {"dp": 1, "name": "Awakened Dynasty"},
+            {"dp": 1, "name": "Annihilation Legion"},
+            {"dp": 1, "name": "Canoptek Court"},
+            {"dp": 1, "name": "Obeisance Phalanx"},
+            {"dp": 1, "name": "Hypercrypt Legion"},
+            {"dp": 1, "name": "Starshatter Arsenal"},
+            {"dp": 1, "name": "Cryptek Conclave"},
+            {"dp": 1, "name": "Cursed Legion"},
+            {"dp": 1, "name": "Pantheon of Woe"}
         ]
     },
     {
@@ -454,17 +454,17 @@
         "icon": "orcs.png",
         "colour": "transparent",
         "detachments": [
-            "War Horde",
-            "Da Big Hunt",
-            "Kult of Speed",
-            "Dread Mob",
-            "Green Tide",
-            "Bully Boyz",
-            "Taktikal Brigade",
-            "More Dakka!",
-            "Freebooter Krew",
-            "Speedwaaagh!",
-            "Blitz Brigade"
+            {"dp": 1, "name": "War Horde"},
+            {"dp": 1, "name": "Da Big Hunt"},
+            {"dp": 1, "name": "Kult of Speed"},
+            {"dp": 1, "name": "Dread Mob"},
+            {"dp": 1, "name": "Green Tide"},
+            {"dp": 1, "name": "Bully Boyz"},
+            {"dp": 1, "name": "Taktikal Brigade"},
+            {"dp": 1, "name": "More Dakka!"},
+            {"dp": 1, "name": "Freebooter Krew"},
+            {"dp": 1, "name": "Speedwaaagh!"},
+            {"dp": 1, "name": "Blitz Brigade"}
         ]
     },
     {
@@ -473,12 +473,12 @@
         "icon": "t_au-empire.png",
         "colour": "transparent",
         "detachments": [
-            "Kauyon",
-            "Mont'Ka",
-            "Retaliation Cadre",
-            "Kroot Hunting Pack",
-            "Auxiliary Cadre",
-            "Experimental Prototype Cadre"
+            {"dp": 1, "name": "Kauyon"},
+            {"dp": 1, "name": "Mont'Ka"},
+            {"dp": 1, "name": "Retaliation Cadre"},
+            {"dp": 1, "name": "Kroot Hunting Pack"},
+            {"dp": 1, "name": "Auxiliary Cadre"},
+            {"dp": 1, "name": "Experimental Prototype Cadre"}
         ]
     },
     {
@@ -487,14 +487,14 @@
         "icon": "leagues-of-votann.png",
         "colour": "transparent",
         "detachments": [
-            "Oathband",
-            "Hearthband",
-            "Needgaard Oathband",
-            "Persecution Prospect",
-            "Delve Assault Shift",
-            "Brandfast Oathband",
-            "Hearthfire Arsenal",
-            "Mercenary Oathband"
+            {"dp": 1, "name": "Oathband"},
+            {"dp": 1, "name": "Hearthband"},
+            {"dp": 1, "name": "Needgaard Oathband"},
+            {"dp": 1, "name": "Persecution Prospect"},
+            {"dp": 1, "name": "Delve Assault Shift"},
+            {"dp": 1, "name": "Brandfast Oathband"},
+            {"dp": 1, "name": "Hearthfire Arsenal"},
+            {"dp": 1, "name": "Mercenary Oathband"}
         ]
     }
 ]

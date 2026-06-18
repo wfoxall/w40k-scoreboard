@@ -5,14 +5,14 @@
             <div class="flex flex-col gap-4">
                 <h2 class="text-xl">Player A</h2>
                 <UFormField label="Faction & Detachment">
-                    <ArmySelect v-model="armyA"/>
+                    <ArmySelect v-model:detachments="ArmyADetachments"/>
                 </UFormField>
                 <UCheckbox v-model="ArmyABattleReady" label="Battle Ready" description="The player's army is sufficiently painted to be considered 'battle ready' (+10 VP)"/>
             </div>
             <div class="flex flex-col gap-4">
                 <h2 class="text-xl">Player B</h2>
                 <UFormField label="Faction & Detachment">
-                    <ArmySelect v-model="armyB"/>
+                    <ArmySelect v-model:detachments="ArmyBDetachments"/>
                 </UFormField>
                 <UCheckbox v-model="ArmyBBattleReady" label="Battle Ready" description="The player's army is sufficiently painted to be considered 'battle ready' (+10 VP)"/>
             </div>
@@ -22,20 +22,51 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useArmies } from '../composables/useArmies';
+import { useArmy } from '../composables/useArmy';
+import type { DetatchmentOption } from '../config/armies';
 
 const ArmyABattleReady = computed({
-    get: () => {return !!armyA.value.battleReady},
+    get: () => {return !!armyA.armyConfig.value.battleReady},
     set: (val: boolean) => {
-        setArmyBattleReady('a',val);
+        armyA.setBattleReady(val);
+    }
+})
+const ArmyAFaction = computed({
+    get: () => {return armyA.armyConfig.value.faction},
+    set: (val?: string) => {
+        console.log(val)
+        if(val === armyA.armyConfig.value.faction) return
+        armyA.armyConfig.value.faction = val
+        armyA.setDetachments([]);
+    }
+})
+const ArmyADetachments = computed({
+    get: () => {return armyA.armyConfig.value.detachments},
+    set: (val: DetatchmentOption[]) => {
+        armyA.setDetachments(val.map(d => d.detachment));
     }
 })
 const ArmyBBattleReady = computed({
-    get: () => {return !!armyB.value.battleReady},
+    get: () => {return !!armyB.armyConfig.value.battleReady},
     set: (val: boolean) => {
-        setArmyBattleReady('b',val);
+        armyB.setBattleReady(val);
+    }
+})
+const ArmyBFaction = computed({
+    get: () => {return armyB.armyConfig.value.faction},
+    set: (val?: string) => {
+        if(val === armyB.armyConfig.value.faction) return
+        armyB.armyConfig.value.faction = val
+        armyB.setDetachments([]);
+    }
+})
+const ArmyBDetachments = computed({
+    get: () => {return armyB.armyConfig.value.detachments},
+    set: (val: DetatchmentOption[]) => {
+        armyB.setDetachments(val.map(d => d.detachment));
     }
 })
 
-const {armyA,armyB, setArmyBattleReady} = useArmies();
+const armyA = useArmy('playerA');
+const armyB = useArmy('playerB');
 </script>
