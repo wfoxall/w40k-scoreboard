@@ -34,9 +34,9 @@
 import { computed } from 'vue';
 import type { PlayerScore } from '../composables/useMatch';
 import NumberTicker from '../lib/number-ticker/NumberTicker.vue';
-import type { ArmyConfig } from '../config/armies.ts';
 import GlowBorder from '../lib/glow-border/GlowBorder.vue';
 import {useSettings} from '../composables/useSettings'
+import type { ArmyConfig } from '../composables/useArmy.ts';
 
 const {armyHighlightStyle, showExtraPointsIcons} = useSettings();
 const props = withDefaults(defineProps<{
@@ -44,7 +44,7 @@ const props = withDefaults(defineProps<{
     config?: ArmyConfig|null,
     state?: null|'turn'|'win'
 }>(),{config: null, state: null})
-const Detachment = computed(() => `${props.config?.detachments ?? 'Anonymous Detachment'}`)
+const Detachment = computed(() => `${props.config?.detachments.map(d => d.name).join(' & ') ?? 'Anonymous Detachment'}`)
 const Faction = computed(() => props.config?.faction ?? '----')
 // const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
 const Total = computed(() => props.score.primary + props.score.secondary + props.score.extra.battleReady)

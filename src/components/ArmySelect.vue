@@ -1,35 +1,23 @@
 <template>
     <div class="flex flex-col gap-2">
-        <FactionSelect v-model="faction"/>
-        <DetachmentsSelect v-model="detachments" :faction="faction"/>
+        <FactionSelect :model-value="army.armyConfig.value.faction" @update:model-value="onFactionSelect"/>
+        <DetachmentsSelect :model-value="army.armyConfig.value.detachments" @update:model-value="onDetachmentSelect" :faction="army.armyConfig.value.faction"/>
     </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue';
 import DetachmentsSelect from './DetachmentsSelect.vue';
-import { detachmentOptions, type DetatchmentOption } from '../config/armies.ts';
+import { useArmy } from '../composables/useArmy.ts';
 
-const faction = ref<string>()
-const detachments = ref<string[]>()
+const props = defineProps<{armyKey: 'playerA'|'playerB'}>()
+const army = useArmy(props.armyKey)
 
-const detachmentsModel = defineModel<DetatchmentOption[]>('detachments')
-// const factionModel = defineModel<string>('faction')
-
-onMounted(() => {
-    detachments.value = detachmentsModel.value?.map(d => d.detachment)
-    faction.value = detachmentsModel.value?.[0]?.faction
-})
-
-watch(faction, (newFaction,oldFaction) => {
-    if(newFaction !== oldFaction) {
-        detachmentsModel.value = [];
-    }
-})
-watch(detachments, (newDetachments,oldDetachments) => {
-    detachmentsModel.value = detachmentOptions.filter(d => {
-        return newDetachments?.includes(d.detachment) && d.faction === faction.value
-    });
-})
-
+function onFactionSelect(f?: string | null) {
+    console.log(f)
+    if(!f) return army.clearFaction();
+    return army.setFaction(f)
+}
+function onDetachmentSelect(selection: {name: string, dp: number}[]) {
+    army.setDetachments(selection.map(s => s.name))
+}
 </script>

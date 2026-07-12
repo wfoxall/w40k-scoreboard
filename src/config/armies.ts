@@ -1,33 +1,31 @@
-import factions from '../assets/armies.json';
-export interface ArmyConfig {
-    faction?: string;
-    detachments: DetatchmentOption[];
-    icon?: string;
-    colour?: string;
-    battleReady?: boolean;
-}
+import rawJson from '../assets/armies.json';
+import z from 'zod';
 
-export interface DetatchmentOption {
-    superfaction: string;
-    faction: string;
-    detachment: string;
-    dp: number;
-}
+const zDetachmennt = z.object({
+    dp: z.int().nonnegative(),
+    name: z.string().nonempty()
+})
+export type Detachment = z.infer<typeof zDetachmennt>;
 
-export const detachmentOptions = factions
-    .flatMap(f => f
-        .detachments
-        .flatMap(d => ({
-            superfaction: f.superfaction, 
-            faction: f.faction,
-            detachment: d.name,
-            dp: d.dp
-        } satisfies DetatchmentOption))
-    );
+const zFaction = z.object({
+    superfaction: z.string().nonempty(),
+    faction: z.string().nonempty(),
+    icon: z.string(),
+    detachments: z.array(zDetachmennt)
+})
+export type Faction = z.infer<typeof zFaction>;
 
-// export const factionOptions = factions.map(f => ({label: f.faction, description: f.superfaction, icon: f.icon}))
-    
-export function getFaction(name?: string): typeof factions[number] | null {
-    return factions.find(f => f.faction === name) ?? null;
+const zArmiesJSON = z.array(zFaction);
+export type ArmiesJSON = z.infer<typeof zArmiesJSON>;
+
+export const factions = zArmiesJSON
+.parse(rawJson)
+.sort((a,b) => {
+    return a.superfaction.localeCompare(b.superfaction)
+        || a.faction.localeCompare(b.faction)
+});
+
+export const detachmentsForFaction = (faction: string) => {
+    const match = factions.find(f => f.faction === faction);
+    return match ? structuredClone(match.detachments) : []
 }
-export {factions}
