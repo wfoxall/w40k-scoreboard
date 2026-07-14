@@ -19,6 +19,13 @@
         <UFormField label="Army Score Highlight Style">
             <USelect v-model="armyHighlightStyle" :items="armyHighlightStyleOptions"/>
         </UFormField>
+        <UFormField
+            label="Multi-Detachment cycle period"
+            description="Set the detachment name cycle speed when a player is using more than one."
+            :hint="`${detachmentsCyclePeriod} s`"
+            >
+            <USlider :min="0.5" :max="10" :step="0.5" v-model="detachmentsCyclePeriod" :items="armyHighlightStyleOptions"/>
+        </UFormField>
     </div>
 </template>
 
@@ -29,7 +36,8 @@ const {
     scoresWidth,
     showBorder,
     showExtraPointsIcons,
-    armyHighlightStyle
+    armyHighlightStyle,
+    detachmentsCyclePeriod
 } = useSettings();
 
 const armyHighlightStyleOptions: SelectItem[] = [
