@@ -20,8 +20,9 @@
 import { computed } from 'vue';
 import { detachmentsForFaction } from '../config/armies';
 import { type SelectMenuItem } from '@nuxt/ui';
+import { useSettings } from '../composables/useSettings';
 
-const MAX_DP = 3;
+const {maxPlayerDP} = useSettings()
 
 const props = withDefaults(defineProps<{
     faction: string | null
@@ -40,7 +41,7 @@ const CurrentDP = computed(() => model.value.reduce((accum,next) => accum + next
 function shouldDisable(item: {name: string; dp: number}): boolean {
     const inSelection = !!model.value.find((mv) => mv.name === item.name);
     console.log(`${item.name} in selection`, inSelection)
-    const wouldExceedMaxDP = (CurrentDP.value + item.dp) > MAX_DP
+    const wouldExceedMaxDP = (CurrentDP.value + item.dp) > maxPlayerDP.value
     console.log(`${item.name} would exceed MaxDP`, wouldExceedMaxDP)
 
     return !inSelection && wouldExceedMaxDP;
