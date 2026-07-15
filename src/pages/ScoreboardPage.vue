@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, toRefs } from 'vue';
+import { computed } from 'vue';
 import { useMatch } from '../composables/useMatch';
 import { useSettings } from '../composables/useSettings';
 import { useArmy } from '../composables/useArmy';
