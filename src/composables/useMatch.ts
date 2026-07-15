@@ -1,6 +1,6 @@
 import { useRefHistory, useStorage } from "@vueuse/core";
 import { computed } from "vue";
-import { useArmies } from "./useArmies";
+import { useArmy } from "./useArmy";
 
 export interface PlayerTurnScore {
     primary: number;
@@ -23,7 +23,8 @@ const {undo, redo, canUndo, canRedo} = useRefHistory(turnScores, {deep: true})
 
 export function useMatch() {
 
-    const {armyA,armyB} = useArmies();
+    const armyA = useArmy('playerA');
+    const armyB = useArmy('playerB');
 
     function submitTurn(score: PlayerTurnScore) {
         if(turnScores.value.length >= 10) return;
@@ -59,12 +60,12 @@ export function useMatch() {
 
     const PlayerAScore = computed<PlayerScore>(() => {
         const turnScores = calculateCurrentTurnScore(OddTurnScores.value)
-        const extraPoints: PlayerExtraPoints = {battleReady: armyA.value.battleReady ? 10 : 0}
+        const extraPoints: PlayerExtraPoints = {battleReady: armyA.armyConfig.value.battleReady ? 10 : 0}
         return {...turnScores, extra: {...extraPoints}};
     })
     const PlayerBScore = computed<PlayerScore>(() => {
         const turnScores = calculateCurrentTurnScore(EvenTurnScores.value)
-        const extraPoints: PlayerExtraPoints = {battleReady: armyB.value.battleReady ? 10 : 0}
+        const extraPoints: PlayerExtraPoints = {battleReady: armyB.armyConfig.value.battleReady ? 10 : 0}
         return {...turnScores, extra: {...extraPoints}};
     })
 

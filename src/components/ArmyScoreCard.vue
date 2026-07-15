@@ -7,14 +7,15 @@
             'ring-success': UseRing && state === 'win'
         }">
         <GlowBorder v-if="UseGlow" :duration="state === 'win' ? 8 : 30" :color="state === 'win' ? ['var(--color-primary)','var(--color-secondary)'] : undefined"/>
-        <div class="grid grid-cols-[auto_max-content] grid-rows-[repeat(3,auto)_auto] items-center grid-flow-col gap-x-4 gap-y-1">
-            <div>{{ Detachment }}</div>
-            <div>{{ Faction }}</div>
-            <div class="text-muted">
-                <span v-if="Superfaction">
-                    {{ Superfaction }}
-                </span>
+        <div class="grid grid-cols-[auto_max-content] grid-rows-[repeat(3,1fr)_auto] items-center grid-flow-col gap-x-4 gap-y-1">
+            <div class="self-start">
+                <TransitionGroup name="slide" tag="div" class="relative self-start">
+                    <div :key="detachmentIdx" class="slide-item">{{ DisplayedDetachment }}</div>
+                </TransitionGroup>
             </div>
+            <div class="text-muted">{{ Faction }}</div>
+            <div v-if="Detachments.length > 1" class="text-muted">{{ Detachments.length }} detachments</div>
+            <div v-else></div>
             <div class="h-full grid grid-cols-[repeat(6,minmax(0,max-content))_auto] gap-4 border-t border-muted items-center w-full">
                 <div class="text-base text-muted">Pri</div>
                 <NumberTicker class="text-default text-base" :value="score.primary" :decimal-places="0"></NumberTicker>
@@ -36,28 +37,74 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref, watch } from 'vue';
 import type { PlayerScore } from '../composables/useMatch';
 import NumberTicker from '../lib/number-ticker/NumberTicker.vue';
-import type { ArmyConfig } from '../composables/useArmies';
 import GlowBorder from '../lib/glow-border/GlowBorder.vue';
 import {useSettings} from '../composables/useSettings'
+import type { ArmyConfig } from '../composables/useArmy.ts';
 
-const {armyHighlightStyle, showExtraPointsIcons} = useSettings();
+const {armyHighlightStyle, showExtraPointsIcons, detachmentsCyclePeriod} = useSettings();
+
 const props = withDefaults(defineProps<{
     score: PlayerScore,
     config?: ArmyConfig|null,
     state?: null|'turn'|'win'
 }>(),{config: null, state: null})
-const Detachment = computed(() => `${props.config?.detachment ?? 'Anonymous Detachment'}`)
+
+const Detachments = computed(() => props.config?.detachments.map(d => d.name) ?? [])
 const Faction = computed(() => props.config?.faction ?? '----')
-const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
+// const Superfaction = computed(() => props.config?.faction === props.config?.superfaction ? undefined : props.config?.superfaction ?? '----')
 const Total = computed(() => props.score.primary + props.score.secondary + props.score.extra.battleReady)
 const Avatar = computed(() => props.config?.icon ? `./avatars/${props.config.icon}` : undefined)
 const Initials = computed(() => {
-    if(!props.config?.superfaction) return '?'
-    return props.config.superfaction.split(' ').map((word) => word.charAt(0)).join('') ?? '?'
+    if(!props.config?.faction) return '?'
+    return props.config.faction.split(' ').map((word) => word.charAt(0)).join('') ?? '?'
 })
 const UseRing = computed(() => armyHighlightStyle.value === 'ring' && ((props.state === 'turn') || (props.state === 'win')))
 const UseGlow = computed(() => armyHighlightStyle.value === 'glow' && ((props.state === 'turn') || (props.state === 'win')))
+
+const detachmentIdx = ref(0);
+const DisplayedDetachment = computed(() => (props.config?.detachments.map(d => d.name) ?? [])[detachmentIdx.value ?? 0] ?? '----')
+let detachmentInterval: number;
+
+function setupInterval() {
+    detachmentIdx.value = 0;
+    window.clearInterval(detachmentInterval)
+    detachmentInterval = window.setInterval(() => {
+        detachmentIdx.value = (detachmentIdx.value + 1) % Detachments.value.length
+    }, detachmentsCyclePeriod.value * 1000)
+}
+
+watch([Faction,Detachments,detachmentsCyclePeriod], () => {setupInterval()}, {immediate: true, deep: true});
+
+
 </script>
+
+<style lang="css" scoped>
+.slider {
+  position: relative;
+  height: 1.5em;
+  overflow: hidden;
+}
+
+.slide-item {
+  position: absolute;
+  width: 100%;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.slide-enter-from {
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.slide-leave-to {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+</style>

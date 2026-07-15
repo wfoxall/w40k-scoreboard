@@ -1,23 +1,23 @@
 <template>
-    <USelectMenu 
-        v-model="model"
-        class="min-w-80" 
-        :items="AllArmyConfigs" 
-        placeholder="Select Army"
-        :filter-fields="['detachment','faction','superfaction']"
-        :ui="{content: ['max-h-120']}"
-        >
-        <template #item-label="{item}">{{ item.detachment }}</template>
-        <template #item-description="{item}">{{ item.faction }} ({{ item.superfaction }})</template>
-        <template #item-leading="{item}"><UAvatar v-if="item.icon" :src="`./avatars/${item.icon}`"/></template>
-        <template #default="{modelValue}"><span class="h-5">{{ modelValue?.detachment ?? 'SELECT' }}</span></template>
-    </USelectMenu>
+    <div class="flex flex-col gap-2">
+        <FactionSelect :model-value="army.armyConfig.value.faction" @update:model-value="onFactionSelect"/>
+        <DetachmentsSelect :model-value="army.armyConfig.value.detachments" @update:model-value="onDetachmentSelect" :faction="army.armyConfig.value.faction"/>
+    </div>
 </template>
 
 <script setup lang="ts">
-import { type ArmyConfig, useArmies } from '../composables/useArmies';
+import DetachmentsSelect from './DetachmentsSelect.vue';
+import { useArmy } from '../composables/useArmy.ts';
 
-const model = defineModel<ArmyConfig>()
+const props = defineProps<{armyKey: 'playerA'|'playerB'}>()
+const army = useArmy(props.armyKey)
 
-const {AllArmyConfigs} = useArmies();
+function onFactionSelect(f?: string | null) {
+    console.log(f)
+    if(!f) return army.clearFaction();
+    return army.setFaction(f)
+}
+function onDetachmentSelect(selection: {name: string, dp: number}[]) {
+    army.setDetachments(selection.map(s => s.name))
+}
 </script>

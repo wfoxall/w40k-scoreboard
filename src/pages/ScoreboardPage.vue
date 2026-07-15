@@ -6,8 +6,8 @@
         <div class="px-4">
             <div class="text-2xl text-primary">{{ TitleText }}</div>
         </div>
-        <ArmyScoreCard :score="PlayerAScore" :config="armyA" :state="ArmyAState"/>
-        <ArmyScoreCard :score="PlayerBScore" :config="armyB" :state="ArmyBState"/>
+        <ArmyScoreCard :score="PlayerAScore" :config="armyA.armyConfig.value" :state="ArmyAState"/>
+        <ArmyScoreCard :score="PlayerBScore" :config="armyB.armyConfig.value" :state="ArmyBState"/>
     </div>
 </template>
 
@@ -15,10 +15,13 @@
 import { computed } from 'vue';
 import { useMatch } from '../composables/useMatch';
 import { useSettings } from '../composables/useSettings';
-import { useArmies } from '../composables/useArmies';
+import { useArmy } from '../composables/useArmy';
 
 const {scoresWidth, showBorder} = useSettings();
-const {armyA,armyB} = useArmies()
+const armyA = useArmy('playerA')
+const armyB = useArmy('playerB')
+// const {armyConfig: armyA} = toRefs(useArmy('playerA'))
+// const {armyConfig: armyB} = toRefs(useArmy('playerB'))
 
 const TitleText = computed(() => {
     if(MatchState.value === 'complete') return `Final scores`
