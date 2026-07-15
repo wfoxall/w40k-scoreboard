@@ -19,7 +19,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { detachmentsForFaction } from '../config/armies';
-import { type SelectMenuItem } from '@nuxt/ui';
+import type { SelectMenuItem } from '@nuxt/ui';
 import { useSettings } from '../composables/useSettings';
 
 const {maxPlayerDP} = useSettings()
