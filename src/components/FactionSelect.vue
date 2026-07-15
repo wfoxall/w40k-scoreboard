@@ -21,7 +21,7 @@ const Items = computed<SelectMenuItem[]>(() => factions.map(f => ({
     key: f.faction,
     label: f.faction,
     description: f.superfaction,
-    avatar: {src: `/avatars/${f.icon}`},
+    avatar: {src: `./avatars/${f.icon}`},
     onSelect: () => {
         model.value = f.faction
     }
