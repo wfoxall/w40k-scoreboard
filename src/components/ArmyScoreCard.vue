@@ -8,18 +8,11 @@
         }">
         <GlowBorder v-if="UseGlow" :duration="state === 'win' ? 8 : 30" :color="state === 'win' ? ['var(--color-primary)','var(--color-secondary)'] : undefined"/>
         <div class="grid grid-cols-[auto_max-content] grid-rows-[repeat(3,1fr)_auto] items-center grid-flow-col gap-x-4 gap-y-1">
-            <!-- <div v-if="(config?.detachments ?? []).length > 1">
-                <MorphingText :texts="(config?.detachments ?? []).map(d => d.name)"/>
-            </div> -->
-            <div v-if="Detachments.length > 1" class="self-start">
+            <div class="self-start">
                 <TransitionGroup name="slide" tag="div" class="relative self-start">
                     <div :key="detachmentIdx" class="slide-item">{{ DisplayedDetachment }}</div>
                 </TransitionGroup>
             </div>
-            <div v-else>{{ DisplayedDetachment }}</div>
-            <!-- <div v-else class="overflow-hidden grid grid-rows-subgrid">
-                <div class="text-muted">{{ Detachments.length }} detachments</div>
-            </div> -->
             <div class="text-muted">{{ Faction }}</div>
             <div v-if="Detachments.length > 1" class="text-muted">{{ Detachments.length }} detachments</div>
             <div v-else></div>
@@ -72,10 +65,11 @@ const UseRing = computed(() => armyHighlightStyle.value === 'ring' && ((props.st
 const UseGlow = computed(() => armyHighlightStyle.value === 'glow' && ((props.state === 'turn') || (props.state === 'win')))
 
 const detachmentIdx = ref(0);
-const DisplayedDetachment = computed(() => Detachments.value[detachmentIdx.value])
+const DisplayedDetachment = computed(() => (props.config?.detachments.map(d => d.name) ?? [])[detachmentIdx.value ?? 0] ?? '----')
 let detachmentInterval: number;
 
 function setupInterval() {
+    detachmentIdx.value = 0;
     window.clearInterval(detachmentInterval)
     detachmentInterval = window.setInterval(() => {
         detachmentIdx.value = (detachmentIdx.value + 1) % Detachments.value.length

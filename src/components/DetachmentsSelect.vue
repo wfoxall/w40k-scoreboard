@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<{
     faction: string | null
 }>(), {faction: null})
 
-const model = defineModel<{name: string, dp: number}[]>({default: () => []})
+const model = defineModel<{name: string, dp: number}[]>({default: []})
 
 const Items = computed(() => props.faction ? detachmentsForFaction(props.faction) : [])
 const MenuItems = computed<(SelectMenuItem & {data: {name:string;dp:number}})[]>(() => Items.value.map(i => ({
